@@ -11,12 +11,9 @@ import './App.css';
 class App extends React.Component {
   constructor(props){
     super(props)
-    this.state = {}
-  }
-
-  componentDidMount(){
-    const name = window.prompt('What is your name?')
-    this.setState({ name })
+    this.state = {
+      name: 'NAME_HERE'
+    }
   }
 
   render() {
