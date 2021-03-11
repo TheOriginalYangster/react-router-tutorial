@@ -1,0 +1,15 @@
+@import '/src/Sass/Main.scss';
+@import '/src/Sass/Colors.scss';
+
+.header {
+
+  background-color: $dark;
+  color: $font;
+
+  &__nav-link {
+    text-decoration: none;
+    margin: 2em;
+    font-size: 3em;
+    color: $font;
+  }
+}

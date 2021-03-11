@@ -1,0 +1,11 @@
+
+.items {
+
+  &__card-display {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 33.3333333333%
+  }
+}
