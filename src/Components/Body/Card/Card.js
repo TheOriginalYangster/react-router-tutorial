@@ -14,17 +14,11 @@ class Card extends React.Component {
   }
 
   componentDidMount(){
-    const uid = this.props.match.params.uid
-    fetch(`https://api.magicthegathering.io/v1/cards/${uid}`)
-      .then(r => r.json())
-      .then(r => this.setState({ card: r.card }))
   }
 
   render() {
 
     const { card } = this.state
-
-    
 
     if(!card) return <img src="https://i.pinimg.com/originals/f5/a4/9b/f5a49bee120a71d8a00a273a5a315d04.gif" />
     else {
@@ -60,4 +54,4 @@ class Card extends React.Component {
   }
 }
 
-export default withRouter(Card)
+export default Card
