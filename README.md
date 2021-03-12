@@ -95,7 +95,7 @@ import { NavLink } from 'react-router-dom'
 
 ```
 <NavLink to={`/card/${uid}`}>
-<img src={url} width="200px"/>
+  <img src={url} width="200px"/>
 </NavLink>
 ```
 
