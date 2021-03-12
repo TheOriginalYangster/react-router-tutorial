@@ -86,7 +86,7 @@ import { Switch, Route } from 'react-router-dom'
 
 #### 4. Add `<NavLink />` to the card's image in '/Components/Body/Items/Item/Item.js'
 
-These are the components that render a single card's results
+`<Item/>`s are the components that render a single card's results.
 We want to be able to click the card image and navigate to a url that's specific to the card id we clicked.
 We have the 'uid' prop being passed in.  So when we render these `<NavLink/>`s, we generate a unique url based on the uid using template literals.
 ```
