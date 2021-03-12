@@ -117,7 +117,7 @@ Export the Card component using the withRouter() function.  This will give the c
 export default withRouter(Card)
 ```
 
-Pull the uid from the URL using the match property you now have access to.
+We can now pull the uid from the URL using the match property we now have access to.  Add the following code to pull the uid from **match**, then fetch the card information from the MTG API.
 ```
 const uid = this.props.match.params.uid
 fetch(`https://api.magicthegathering.io/v1/cards/${uid}`)
