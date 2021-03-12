@@ -56,7 +56,7 @@ Replace the `<span/>`s with the following code:
 #### 3. Add following code to Body:
 
 `<Switch/>` components house Routes.
-A `<Switch/>` component operates like a switch statment; it goes top-down comparing it's Routes "paths" the current URL.
+A `<Switch/>` component operates like a switch statment; it goes top-down comparing it's Route's "paths" the current URL.
 When it finds a match, it will render the component that is nested in the found Route.
 
 Note: The way I coded the routes below is the simplest way to pass props to `<Route/>` child components.
