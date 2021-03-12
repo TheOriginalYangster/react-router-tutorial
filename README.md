@@ -13,9 +13,6 @@ npm start
 
 ## Tutorial
 
-I will format this later!
-
-
 #### 0. Install React Router
 
 ```
