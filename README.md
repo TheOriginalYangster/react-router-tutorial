@@ -22,10 +22,10 @@ I will format this later!
 
       import { BrowserRouter as Router } from 'react-router-dom'
 
-      <Router>
-        <Header />
-        <Body name={name} />
-      </Router>
+      ><Router>
+      >  <Header />
+      >  <Body name={name} />
+      ></Router>
 
 You need to put BrowserRouter at the highest-level possible
 All of BrowserRouter's child components will be linked to the BrowserRouter
@@ -35,10 +35,10 @@ You can't use react-router components outside of one.
 
       import { NavLink } from 'react-router-dom'
 
-      <NavLink className={linkClass} to="/">Home</NavLink>
-      <NavLink className={linkClass} to="/about">About</NavLink>
-      <NavLink className={linkClass} to="/contact">Contact</NavLink>
-      <NavLink className={linkClass} to="/items">Items</NavLink>
+      ><NavLink className={linkClass} to="/">Home</NavLink>
+      ><NavLink className={linkClass} to="/about">About</NavLink>
+      ><NavLink className={linkClass} to="/contact">Contact</NavLink>
+      ><NavLink className={linkClass} to="/items">Items</NavLink>
 
 NavLinks are a react-router component that will change the browser's url without navigating away from the page.
 Similar to an <a> tag.
@@ -47,34 +47,34 @@ Similar to an <a> tag.
 
     import { Switch, Route } from 'react-router-dom'
 
-    <Switch>
-      <Route exact path="/about">
-        <About name={name} />
-      </Route>
-      <Route exact path="/items">
-        <Items name={name} />
-      </Route>
-      <Route exact path="/contact">
-        <Contact name={name} />
-      </Route>
-      <Route exact path="/">
-        <Home name={name} />
-      </Route>
-    </Switch>
+    ><Switch>
+    >  <Route exact path="/about">
+    >    <About name={name} />
+    >  </Route>
+    >  <Route exact path="/items">
+    >    <Items name={name} />
+    >  </Route>
+    >  <Route exact path="/contact">
+    >    <Contact name={name} />
+    >  </Route>
+    >  <Route exact path="/">
+    >    <Home name={name} />
+    >  </Route>
+    ></Switch>
 
 Switch components house Routes.
 A switch component operates like a switch statment; it goes top-down checking it's routes "paths" to find a match.
 When it finds a match, it will render the component that is nested in the Route.
 
-4. Add <NavLink /> to the card's image in '/Components/Body/Card/Card.js'
+1. Add <NavLink /> to the card's image in '/Components/Body/Card/Card.js'
 
     import { NavLink } from 'react-router-dom'
 
-    <NavLink to={`/card/${uid}`}>
-      <img src={url} width="200px"/>
-    </NavLink>
+    ><NavLink to={`/card/${uid}`}>
+    >  <img src={url} width="200px"/>
+    ></NavLink>
 
-5. Add Card route in 'Body.js'
+2. Add Card route in 'Body.js'
 
       <Route exact path="/card/:uid">
         <Card name={name} />
