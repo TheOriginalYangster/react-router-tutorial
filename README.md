@@ -117,7 +117,7 @@ Export the Card component using the `withRouter()` function.  This will give the
 export default withRouter(Card)
 ```
 
-We can now pull the uid from the URL using the match prop we now have access to.  Add the following code to pull the uid from **match**, then fetch the card information from the MTG API.
+We can now pull the uid from the URL using the **match** prop we now have access to.  Add the following code to pull the uid from **match**, then fetch the card information from the MTG API.
 
 In `componentDidMount()`:
 ```
