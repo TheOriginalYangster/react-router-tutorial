@@ -45,7 +45,7 @@ Similar to an `<a>` tag.  They only change the URL, nothing else!
 import { NavLink } from 'react-router-dom'
 ```
 
-Replace the <span/>s with the following code:
+Replace the `<span/>`s with the following code:
 ```
 <NavLink className={linkClass} to="/">Home</NavLink>
 <NavLink className={linkClass} to="/about">About</NavLink>
