@@ -110,16 +110,16 @@ In the `<Switch/>` component, add the route:
 </Route>
 ```
 
-#### 6: Add withRouter() to export decleration and finish componentDidMount() function
+#### 6: Add `withRouter()` to export decleration and finish componentDidMount() function
 
-Export the Card component using the withRouter() function.  This will give the component access to the following props: **history**, **match**, and **location**.
+Export the Card component using the `withRouter()` function.  This will give the component access to the following props: **history**, **match**, and **location**.
 ```
 export default withRouter(Card)
 ```
 
 We can now pull the uid from the URL using the match property we now have access to.  Add the following code to pull the uid from **match**, then fetch the card information from the MTG API.
 
-In componentDidMount():
+In `componentDidMount()`:
 ```
 const uid = this.props.match.params.uid
 fetch(`https://api.magicthegathering.io/v1/cards/${uid}`)
