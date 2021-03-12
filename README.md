@@ -130,6 +130,6 @@ fetch(`https://api.magicthegathering.io/v1/cards/${uid}`)
 #### 7: All done!
 You now have all the tools to get started using React Router!
 
-For your future projects, you should utilize the `<Switch/>` component to default to a 'PAGE_NOT_FOUND' component if the user tries to type in an invalid URL.  Go to [facebook.com/asdf](facebook.com/asdf) for an example of this.
+For your future projects, you should utilize the `<Switch/>` component to default to a 'PAGE_NOT_FOUND' component if the user tries to type in an invalid URL.  Go to [facebook.com/asdf](https://facebook.com/asdf) for an example of this.
 
 If you want to learn more, use the [docs!](https://reactrouter.com/web/example/basic)
