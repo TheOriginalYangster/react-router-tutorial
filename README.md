@@ -110,7 +110,7 @@ In the `<Switch/>` component, add the route:
 </Route>
 ```
 
-#### 6: Add `withRouter()` to export decleration and finish componentDidMount() function
+#### 6: Add `withRouter()` to export decleration and finish `componentDidMount()` function
 
 Export the Card component using the `withRouter()` function.  This will give the component access to the following props: **history**, **match**, and **location**.
 ```
