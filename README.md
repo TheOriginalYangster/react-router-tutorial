@@ -101,7 +101,7 @@ import { NavLink } from 'react-router-dom'
 
 #### 5. Add '/card/CARD_ID' route in 'Body.js'
 
-We want to add a new route for the `<Card/>` component.  This route will have a **parameter**, similar to Express.js route parameters.  We can use this to pull the uid from the URL later.
+We want to add a new route for the `<Card/>` component.  This route will have a **parameter**, similar to Express.js API endpoint parameters.  We can use this to pull the uid from the URL later.
 
 In the `<Switch/>` component, add the route:
 ```
