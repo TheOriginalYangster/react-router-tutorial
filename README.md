@@ -106,7 +106,7 @@ We want to add a new route for the `<Card/>` component.  This route will have a 
 In the `<Switch/>` component, add the route:
 ```
 <Route exact path="/card/:uid">
-      <Card name={name} />
+  <Card name={name} />
 </Route>
 ```
 
