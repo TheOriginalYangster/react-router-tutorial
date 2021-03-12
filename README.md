@@ -118,6 +118,8 @@ export default withRouter(Card)
 ```
 
 We can now pull the uid from the URL using the match property we now have access to.  Add the following code to pull the uid from **match**, then fetch the card information from the MTG API.
+
+In componentDidMount():
 ```
 const uid = this.props.match.params.uid
 fetch(`https://api.magicthegathering.io/v1/cards/${uid}`)
