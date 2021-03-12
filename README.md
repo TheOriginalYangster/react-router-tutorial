@@ -16,13 +16,13 @@ npm start
 I will format this later!
 
 
-####0. Install React Router
+###0. Install React Router
 
 ```
 npm install --save react-router-dom
 ```
 
-####1. Add `<BrowserRouter />` to 'App.js'
+###1. Add `<BrowserRouter />` to 'App.js'
 
 In general, put the `<BrowserRouter/>` in the highest component possible.  All components you want to use React-Router need to be child components of your `<BrowserRouter/>`, otherwise you will get an error.
 
@@ -39,7 +39,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 </Router>
 ```
 
-####2. Add `<NavLink/>`s to 'Header.js'
+###2. Add `<NavLink/>`s to 'Header.js'
 
 `<NavLinks/>` are a react-router component that will change the browser's url without navigating away from the page.
 Similar to an `<a>` tag.  They only change the URL, nothing else!
@@ -56,7 +56,7 @@ Replace the <span/>s with the following code:
 <NavLink className={linkClass} to="/items">Items</NavLink>
 ```
 
-####3. Add following code to Body:
+###3. Add following code to Body:
 
 `<Switch/>` components house Routes.
 A `<Switch/>` component operates like a switch statment; it goes top-down comparing it's routes "paths" the current URL.
@@ -102,7 +102,7 @@ import { NavLink } from 'react-router-dom'
 </NavLink>
 ```
 
-####5. Add '/card/CARD_ID' route in 'Body.js'
+###5. Add '/card/CARD_ID' route in 'Body.js'
 
 We want to add a new route for the `<Card/>` component.  This route will have a **parameter**, similar to Express.js route parameters.  We can use this to pull the uid from the URL later.
 
@@ -113,7 +113,7 @@ In the `<Switch/>` component, add the route:
 </Route>
 ```
 
-####6: Add withRouter() to export decleration and finish componentDidMount() function
+###6: Add withRouter() to export decleration and finish componentDidMount() function
 
 Export the Card component using the withRouter() function.  This will give the component access to the following props: **history**, **match**, and **location**.
 ```
